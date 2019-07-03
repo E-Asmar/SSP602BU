@@ -1,0 +1,44 @@
+ <div class="table-responsive">
+  <form method="post" action="/tasks/add">
+    <table class="table table-condensed">
+      <tbody>
+       <tr>
+        <th width="200">Task Title: </th>
+        <td><input type="text" name="taskTitle" required 
+              placeholder="Enter the title of your task"></td>
+       </tr>
+       <tr>
+         <th>Task Description</th>
+         <td><input type="text" name="taskDiscription" required 
+              placeholder="Enter first name"></td>
+       </tr>
+       <tr >
+       <th>Task Milestones</th>
+       
+        <td id="milestone-form">
+            <input type="text" name="taskMilestone" required 
+              placeholder="Milestone_0"><br>
+        </td>
+       </tr>
+       
+       <!--<tr>
+         <th>Employee's Last Name: </th>
+         <td><input type="text" name="lname" size="40"
+              placeholder="Enter last name"></td>
+       </tr>-->
+      </tbody>
+      <tfooter>
+        <tr>
+          <td></td>
+          <td>
+            <input type="button" value="Add Milestone" class="btn" onclick="addMilestone()">
+           <input type="submit" value="Save" 
+              class="btn btn-success">
+           <input type="button" value="Cancel" 
+              class="btn btn-danger" onclick="cancelAdd()">
+          </td>
+        </tr>
+      </tfooter>
+    </table>
+  </form>
+</div>

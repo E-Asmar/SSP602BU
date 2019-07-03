@@ -1,0 +1,16 @@
+what i accomplished
+	Data is presistant
+	tasks can be created 
+	task can be deleted 
+
+	details open up the full expanse of the task displaying all the milestones 
+		button and checkboxes are generated with item lines and have id's associated with the milestone ID - these are currently a place holder for future functionality.
+
+		future funcitonality might involve on click changing 
+
+JsonAPI set up for displaying both all tasks and singlular task.
+
+
+
+What challenges arose or were faced 
+	working with multidimentional arrays

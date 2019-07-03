@@ -1,0 +1,26 @@
+ <div class="table-responsive">
+  <form method="post" action="/tasks/add">
+    <table class="table table-condensed">
+      <tbody>
+       <tr>
+        <th width="200">enter your namespace </th>
+        <td><input type="text" name="taskTitle" required 
+              placeholder="Enter the title of your task"></td>
+       </tr>
+       
+      </tbody>
+      <tfooter>
+        <tr>
+          <td></td>
+          <td>
+            <input type="button" value="Set Namespace" class="btn" onclick="addMilestone()">
+           <input type="submit" value="Enter" 
+              class="btn btn-success">
+           <input type="button" value="Cancel" 
+              class="btn btn-danger" onclick="cancelAdd()">
+          </td>
+        </tr>
+      </tfooter>
+    </table>
+  </form>
+</div>

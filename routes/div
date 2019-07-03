@@ -1,0 +1,71 @@
+<div>
+	<div class="table-responsive">
+		<table class="table table-condensed">
+			<main>
+				<section>
+					<h3>Task Title:</h3> <h1>{{data.taskTitle}}</h1>
+					<h4>Task Discription</h4> <h2>{{data.taskDiscription}}</h2>
+					<h4>Milestones</h4>
+					
+						
+						<ul> 
+						{{#each data.taskMilestoneDes}}
+						<h3><li>{{this.milestoneDiscription}} </li></h3>
+						<input type="checkbox">
+						<button class="btn btn-primary" 
+						onClick="">Complete</button>
+						{{/each}}
+						</ul>
+						
+
+					
+		<!--	<thead>
+				<tr>
+					<th>Task Title</th>
+					
+				</tr>
+				<tr>	
+					<th>Task Description</th>
+					
+					<th></th>
+				</tr>
+				<tr>
+					<th>Milestones</th>
+					{{#each data}}
+					<th>{{this.milestoneDiscrtiption}}<th>  
+					{{/each}}
+{{data.taskMilestone.0.milestoneDescription}}
+					
+				</tr>
+					
+			</thead>-->
+			<!--<tbody>
+				<tr id="milestone-display">
+		       
+		        <td >thisi a test space</td>
+		        </tr
+				{{#each data}}
+					{{@key}}: {{this}}
+					<ul>
+					</ul>
+						<tr>
+						
+						<td>data index is : {{item.0.text}} :{{item.1.text}} </td>
+						<td>
+							<a href="/tasks/mdisplay/{{this.id}}">Details</a>
+							<a href="/tasks/edit/{{this.id}}">Edit</a>
+							<a href="/tasks/delete/{{this.id}}">Delete</a>
+						</td>
+					</tr>
+				{{/each}}
+			</tbody>-->
+			<tfooter>
+				<tr><td>
+
+					<button class="btn btn-primary" 
+						onClick="addTask();">Add</button>
+				</td></tr>
+			</tfooter>
+		</table>
+	</div>
+</div>
